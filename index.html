@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
-</head>
-<body>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- daisyui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    </style>
     
+</head>
+<body class="bg-sky-100 poppins-light">
+    <header class="pt-7 pb-7">
+        <nav class="bg-white w-[1536px] p-5 rounded-[16px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="">
+                <p class="text-4xl">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-[123px] h-[64px] bg-[#F4F7FF] rounded-[32px] flex items-center justify-center gap-2">
+                    <img src="assets/checkbox.png" alt="">
+                    <h1 class="font-bold text-3xl">23</h1>
+                </div>
+                <div>
+                    <button><img src="assets/theme-btn.png" alt=""></button>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
